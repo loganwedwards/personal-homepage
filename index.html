@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>le create</title>
+	<style type="text/css">
+	<!--
+	@font-face {
+		font-family: 'PrintBoldRegular';
+		src: url('fonts/PrintBold-webfont.eot');
+		src: url('fonts/PrintBold-webfont.eot?#iefix') format('embedded-opentype'),
+		url('fonts/PrintBold-webfont.woff') format('woff'),
+		url('fonts/PrintBold-webfont.ttf') format('truetype'),
+		url('fonts/PrintBold-webfont.svg#PrintBoldRegular') format('svg');
+		font-weight: normal;
+		font-style: normal;
+	}
+
+	@font-face {
+		font-family: 'PrintClearlyRegular';
+		src: url('fonts/PrintClearly-webfont.eot');
+		src: url('fonts/PrintClearly-webfont.eot?#iefix') format('embedded-opentype'),
+		url('fonts/PrintClearly-webfont.woff') format('woff'),
+		url('fonts/PrintClearly-webfont.ttf') format('truetype'),
+		url('fonts/PrintClearly-webfont.svg#PrintClearlyRegular') format('svg');
+		font-weight: normal;
+		font-style: normal;
+	}
+
+	html, body {
+		height: 100%;
+	}
+
+	body {
+		margin: 0;
+		font-family: "PrintClearlyRegular", "Helvetica";
+		color: rgb(128,128,128);
+	}
+
+	.flex {
+		display: -ms-flexbox;  /* TWEENER - IE 10 */
+		display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+		display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+	}
+
+	#main{
+		-webkit-align-items: center;
+		align-items: center;
+		-webkit-justify-content: center;
+		justify-content: center;
+		-webkit-flex-direction: column;
+		flex-direction: column;
+		height: calc(100% - 44px);
+	}
+
+	.nav {
+		-webkit-justify-content: space-around;
+		justify-content: space-around;
+		text-align: center;
+	}
+
+	.nav-item {
+		flex: 1;
+		min-width: 100px;
+	}
+
+	#title{
+		font-weight: normal;
+		text-align: center;
+		color: rgb(128,128,128);
+		font-size: 6em;
+		text-transform: uppercase;
+        margin: 0;
+	}
+
+	p {
+		font-size: 1.5em;
+	}
+
+	.accent {
+		color: rgb(220, 16, 16);
+	}
+
+	#follow_me {
+		margin: 0 auto;
+		background-color: #eee;
+    border-bottom: 1px solid #dcdcdc;
+		padding: 10px;
+		-webkit-justify-content: space-around;
+		justify-content: space-around;
+		-webkit-flex-wrap: wrap;
+		flex-wrap: wrap;
+	}
+
+	#follow_me li {
+		display: inline-block;
+		flex: 1;
+	}
+
+	#follow_me a {
+		padding: 0px;
+		display: inline-block;
+		margin: 0 auto;
+		list-style-type: none;
+	}
+
+	.linkEffect a{
+		text-decoration: none;
+		color: rgb(128,128,128);
+	}
+
+	.linkEffect{
+		font-size: 1.5em;
+		-webkit-transition: all .2s ease-in;
+		-moz-transition: all .2s ease-in;
+		transition: all .2s ease-in;
+	}
+
+	.linkEffect:hover {
+		-moz-transform: scale(1.1);
+		-webkit-transform: scale(1.1);
+		transform: scale(1.1);
+		color: rgb(220, 16, 16);
+	}
+
+	.linkEffect:hover > a {
+		color: rgb(220, 16, 16);
+	}
+
+	@media only screen and (orientation: portrait),
+	(min-width: 320px) and (max-width: 767px) {
+
+		.nav {
+			-webkit-flex-direction: column;
+			flex-direction: column;
+		}
+
+		.nav-item {
+			margin: 10px auto;
+		}
+
+		#follow_me .linkEffect {
+			display: block;
+			text-align: left;
+			padding: 10px;
+			margin: 5px;
+			font-size: 1.5em;
+			width: auto;
+		}
+
+		.linkEffect {
+			border: 1px solid rgba(120, 120, 120, .1);
+			border-radius: 4px;
+			padding: 10px;
+		}
+
+		.linkEffect:hover {
+			box-shadow: 0 0 15px -5px #777;
+			-moz-transform: scale(1.05);
+			-webkit-transform: scale(1.05);
+			transform: scale(1.05);
+
+		}
+	}
+	-->
+	</style>
+</head>
+<body>
+	<div id="follow_me" class="flex">
+			<div class="linkEffect"><a href="http://www.twitter.com/loganwedwards">twitter</a></div>
+			<div class="linkEffect"><a href="http://www.facebook.com/loganwedwards">facebook</a></div>
+			<div class="linkEffect"><a href="https://plus.google.com/u/0/105917686300569376908/about">google+</a></div>
+			<div class="linkEffect"><a href="http://www.linkedin.com/in/loganedwards">linkedin</a></div>
+			<!--div class="linkEffect"><a href="http://zerply.com/loganwedwards/public">zerply</a></div-->
+			<div class="linkEffect"><a href="https://github.com/loganwedwards">github</a></div>
+			<div class="linkEffect"><a href="http://www.500px.com/loganedwards">500px</a></div>
+	</div>
+	<div id="main" class="flex">
+		<h1 id="title"><span class="accent">L</span>ogan <span class="accent">E</span>dwards</h1>
+        <h2>By leveraging competencies in physical and software design, I create.</h2>
+		<nav class="nav flex">
+			<div class="nav-item linkEffect"><a href="http://blog.loganwedwards.com">blog</a></div>
+			<div class="nav-item linkEffect"><a href="https://www.dropbox.com/s/pws15pbk2wpug7k/LWE%20Portfolio%20R3.pdf?dl=0">portfolio</a></div>
+			<div class="nav-item linkEffect"><a href="https://www.dropbox.com/s/jfw3hmy3ngtefuy/logan_edwards_resume.pdf?dl=0">resume</a></div>
+		</nav>
+
+
+	</div>
+</body>
+</html>
