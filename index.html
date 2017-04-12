@@ -3,9 +3,9 @@
 <head>
 	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>le create</title>
+	<title>Logan Edwards</title>
 	<style type="text/css">
-	<!--
+
 	@font-face {
 		font-family: 'PrintBoldRegular';
 		src: url('fonts/PrintBold-webfont.eot');
@@ -44,6 +44,14 @@
 		display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
 	}
 
+	.flex-column {
+		flex-direction: column;
+	}
+
+	.wrapper {
+		height: 100%;
+	}
+
 	#main{
 		-webkit-align-items: center;
 		align-items: center;
@@ -52,6 +60,7 @@
 		-webkit-flex-direction: column;
 		flex-direction: column;
 		height: calc(100% - 44px);
+		padding: 20px;
 	}
 
 	.nav {
@@ -70,8 +79,7 @@
 		text-align: center;
 		color: rgb(128,128,128);
 		font-size: 6em;
-		text-transform: uppercase;
-        margin: 0;
+		margin: 0;
 	}
 
 	p {
@@ -82,15 +90,20 @@
 		color: rgb(220, 16, 16);
 	}
 
+	#subtext {
+		text-align: center;
+	}
+
 	#follow_me {
 		margin: 0 auto;
 		background-color: #eee;
-    border-bottom: 1px solid #dcdcdc;
-		padding: 10px;
+		border-bottom: 1px solid #dcdcdc;
+		padding: 10px 0;
 		-webkit-justify-content: space-around;
 		justify-content: space-around;
 		-webkit-flex-wrap: wrap;
 		flex-wrap: wrap;
+		width: 100%;
 	}
 
 	#follow_me li {
@@ -115,6 +128,7 @@
 		-webkit-transition: all .2s ease-in;
 		-moz-transition: all .2s ease-in;
 		transition: all .2s ease-in;
+		text-align: center;
 	}
 
 	.linkEffect:hover {
@@ -140,6 +154,10 @@
 			margin: 10px auto;
 		}
 
+		#title {
+			font-size: 4em;
+		}
+
 		#follow_me .linkEffect {
 			display: block;
 			text-align: left;
@@ -163,29 +181,26 @@
 
 		}
 	}
-	-->
+
 	</style>
 </head>
 <body>
-	<div id="follow_me" class="flex">
-			<div class="linkEffect"><a href="http://www.twitter.com/loganwedwards">twitter</a></div>
-			<div class="linkEffect"><a href="http://www.facebook.com/loganwedwards">facebook</a></div>
-			<div class="linkEffect"><a href="https://plus.google.com/u/0/105917686300569376908/about">google+</a></div>
-			<div class="linkEffect"><a href="http://www.linkedin.com/in/loganedwards">linkedin</a></div>
-			<!--div class="linkEffect"><a href="http://zerply.com/loganwedwards/public">zerply</a></div-->
+	<div class="wrapper flex flex-column">
+		<div id="follow_me" class="flex">
+			<div class="linkEffect"><a href="https://www.twitter.com/loganwedwards">twitter</a></div>
+			<div class="linkEffect"><a href="https://www.linkedin.com/in/loganedwards">linkedin</a></div>
 			<div class="linkEffect"><a href="https://github.com/loganwedwards">github</a></div>
-			<div class="linkEffect"><a href="http://www.500px.com/loganedwards">500px</a></div>
+			<div class="linkEffect"><a href="https://www.500px.com/loganedwards">500px</a></div>
+		</div>
+		<div id="main" class="flex">
+			<h1 id="title"><span class="accent">L</span>ogan <span class="accent">E</span>dwards</h1>
+			<h2 id="subtext">By leveraging competencies in physical and software design, I create.</h2>
+			<nav class="nav flex">
+				<div class="nav-item linkEffect"><a href="https://blog.loganwedwards.com">blog</a></div>
+				<div class="nav-item linkEffect"><a href="https://www.dropbox.com/s/jfw3hmy3ngtefuy/logan_edwards_resume.pdf?dl=0">resume</a></div>
+			</nav>
+		</div>
 	</div>
-	<div id="main" class="flex">
-		<h1 id="title"><span class="accent">L</span>ogan <span class="accent">E</span>dwards</h1>
-        <h2>By leveraging competencies in physical and software design, I create.</h2>
-		<nav class="nav flex">
-			<div class="nav-item linkEffect"><a href="http://blog.loganwedwards.com">blog</a></div>
-			<div class="nav-item linkEffect"><a href="https://www.dropbox.com/s/pws15pbk2wpug7k/LWE%20Portfolio%20R3.pdf?dl=0">portfolio</a></div>
-			<div class="nav-item linkEffect"><a href="https://www.dropbox.com/s/jfw3hmy3ngtefuy/logan_edwards_resume.pdf?dl=0">resume</a></div>
-		</nav>
 
-
-	</div>
 </body>
 </html>
